@@ -61,7 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Vegas Casino Colors
+				'neon-cyan': '#FF0080',
+				'neon-pink': '#F0FFFF', 
+				'vegas-gold': '#FFFD700',
+				'dark-purple': '#000033',
+				'electric-blue': '#0080FF',
+				'casino-black': '#000000'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +91,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neon-pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						textShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor'
+					},
+					'50%': {
+						opacity: '0.8',
+						textShadow: '0 0 5px currentColor, 0 0 15px currentColor, 0 0 25px currentColor'
+					}
+				},
+				'vegas-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(255, 0, 128, 0.5), 0 0 40px rgba(255, 0, 128, 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px rgba(255, 0, 128, 0.8), 0 0 60px rgba(255, 0, 128, 0.5)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'vegas-glow': 'vegas-glow 3s ease-in-out infinite'
 			}
 		}
 	},
