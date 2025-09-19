@@ -42,9 +42,7 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8 text-vegas-gold font-['Montserrat'] font-semibold">
             МАСТЕР АЗАРТНЫХ ИГР
           </p>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
-            Изучите стратегии, рассчитайте вероятности и станьте профессионалом в мире казино
-          </p>
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">Если вам есть 18 и более , то дерзайте</p>
           <Button 
             size="lg" 
             className="bg-vegas-gold text-black hover:bg-vegas-gold/90 text-xl px-8 py-6 animate-vegas-glow font-bold"
