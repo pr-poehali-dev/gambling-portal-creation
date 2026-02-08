@@ -286,6 +286,83 @@ const Index = () => {
         </Tabs>
       </div>
 
+      {/* Reviews Section */}
+      <div className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-vegas-gold font-['Oswald']">
+            ОТЗЫВЫ ИГРОКОВ
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-neon-pink/30 hover:border-neon-pink/60 transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-vegas-gold to-neon-pink flex items-center justify-center text-2xl font-bold">
+                    А
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">Алексей М.</h3>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-vegas-gold fill-vegas-gold" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  Отличное казино! Быстрый вывод средств, честная игра. Уже третий месяц играю и очень доволен. 
+                  Рекомендую всем, кто ищет надежную площадку.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-electric-blue/30 hover:border-electric-blue/60 transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-electric-blue to-neon-pink flex items-center justify-center text-2xl font-bold">
+                    М
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">Мария К.</h3>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-vegas-gold fill-vegas-gold" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  Впервые попробовала онлайн-казино и не пожалела! Большой выбор слотов, приятные бонусы. 
+                  Поддержка оперативно решает все вопросы. Выиграла уже несколько раз!
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-vegas-gold/30 hover:border-vegas-gold/60 transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-neon-pink to-electric-blue flex items-center justify-center text-2xl font-bold">
+                    Д
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">Дмитрий П.</h3>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-vegas-gold fill-vegas-gold" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  Играю в покер уже год. Турниры проходят регулярно, уровень игроков разный. 
+                  Очень удобный интерфейс и мобильная версия. Однозначно 5 звезд!
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+
       {/* Tips Section */}
       <div className="bg-card py-16">
         <div className="container mx-auto px-4">
