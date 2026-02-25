@@ -46,12 +46,9 @@ const Index = () => {
           <Button 
             size="lg" 
             className="bg-vegas-gold text-black hover:bg-vegas-gold/90 text-xl px-8 py-6 animate-vegas-glow font-bold"
-            asChild
           >
-            <a href="https://t.affvibe.net/click?pid=491&offer_id=201" target="_blank" rel="noopener noreferrer">
-              НАЧАТЬ ИГРУ
-              <Icon name="Sparkles" className="ml-2" size={24} />
-            </a>
+            НАЧАТЬ ИГРУ
+            <Icon name="Sparkles" className="ml-2" size={24} />
           </Button>
         </div>
       </div>
